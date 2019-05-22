@@ -1,0 +1,145 @@
+<% include common/header.html %>
+<body class="bg-333">
+<% include common/top.html %>
+
+<% include common/nav.html %>
+
+
+<script>
+    //百度地图获取地理位置信息
+/*
+    var getLocation = {
+        lat:null,
+        lng:null,
+        init: function(sucCallback){
+            var positionOption = {
+                enableHighAccuracy: true,
+                maximumAge: 30000,
+                timeout: 20000
+            };
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(getLocation.getPositionSuccess, getLocation.getPositionError, positionOption);
+                typeof sucCallback == "function" && sucCallback();
+            }else{
+                alert('您的浏览器不支持HTML5,请更换浏览器再试!');
+                return false;
+            }
+        },
+        getLatLng: function(position){
+	    alert(position);
+            obj.lat = position.coords.latitude;
+            obj.lng = position.coords.longitude;
+        },
+        getPositionSuccess: function (sucCallback, failCallback) {
+            var akKey = "xwGCHy5DcQAeUiFFGKNfaaodUbZdNraX";
+            var lat = getLocation.lat;
+            var lng = getLocation.lng;
+            $.ajax({
+                url: 'https://api.map.baidu.com/geocoder/v2/?ak=' + akKey + '&callback=renderReverse&output=json&pois=1',
+                async: true,
+                type: 'GET',
+                dataType: 'jsonp',
+                jsonp: 'callback',
+                data: {'location': lat + ',' + lng},
+                error: function () {
+                    typeof failCallback == "function" && failCallback();
+                },
+                success: function (data) {
+                    typeof sucCallback == "function" && sucCallback(data);
+                }
+            });
+        },
+        getPositionError: function(error) {
+	    alert(error);
+            switch (error.code) {
+                case error.TIMEOUT:
+                    console.log("获取位置信息超时");
+                    cntool.hideLoad();
+                    break;
+                case error.PERMISSION_DENIED:
+                    console.log("您拒绝了使用位置共享服务");
+                    cntool.hideLoad();
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    console.log("获取位置信息失败");
+                    cntool.hideLoad();
+                    break;
+            }
+        }
+    }
+
+    getLocation.init(function(){
+        getLocation.getPositionSuccess(function(){
+            //请求失败执行
+        },function(data){
+            //成功试行
+            alert(data);
+        })
+    });
+*/
+
+//    if(navigator.geolocation){
+//        console.log(navigator.geolocation);
+//        navigator.geolocation.getCurrentPosition(getPositionSuccess, getPositionError, positionOption);
+//    }else{
+//        alert('您的浏览器不支持自动定位!');
+//    }
+//    var positionOption = {
+//        enableHighAccuracy: true,
+//        maximumAge: 30000,
+//        timeout: 20000
+//    };
+//
+//    function getPositionSuccess(position){
+//        var lat = position.coords.latitude;
+//        var lng = position.coords.longitude;
+//
+//        $.ajax({
+//            url: 'https://api.map.baidu.com/geocoder/v2/?ak=xwGCHy5DcQAeUiFFGKNfaaodUbZdNraX&callback=renderReverse&output=json&pois=1',
+//            async:true,
+//            type: 'GET',
+//            dataType: 'jsonp',
+//            jsonp: 'callback',
+//            data: {'location':lat+','+lng},
+//            error:function(){
+//                cntool.tips('获取地理位置失败');
+//                return false;
+//            },
+//            success:function(data){
+//                console.log(data);
+//                return false;
+//                var location_city = data.result.addressComponent.city;
+//
+//                if(data.status == 0){
+//                    window.location.reload();
+//                    return false;
+//                }else{
+//                    //cntool.tips('获取地理位置失败');
+//                    return false;
+//                }
+//            }
+//        });
+//        alert( "您所在的位置： 纬度" + lat + "，经度" + lng );
+//    }
+//
+//    function getPositionError(error) {
+//        console.log(error);
+//        switch (error.code) {
+//            case error.TIMEOUT:
+//                alert("获取位置信息超时");
+//                //cntool.hide_load();
+//                break;
+//            case error.PERMISSION_DENIED:
+//                alert("您拒绝了使用位置共享服务");
+//                //cntool.hide_load();
+//                break;
+//            case error.POSITION_UNAVAILABLE:
+//                alert("获取位置信息失败");
+//                //cntool.hide_load();
+//                break;
+//        }
+//    }
+
+</script>
+
+<% include common/footer.html %>

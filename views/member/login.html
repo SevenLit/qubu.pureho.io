@@ -1,0 +1,86 @@
+<% include ../common/header.html %>
+<body class="bg-333">
+	<% include ../common/top.html %>
+        
+	<% include ../common/nav.html %>
+    
+    <div class="container">
+    	<div class="row mt-30 mb-50">
+            <div class="col-md-8">
+            	<div class="trends-code-img">
+                	<img src="../images/code.gif" class="img-responsive">
+                </div>
+            </div>
+            <div class="col-md-4">
+            	<div class="login-bar">
+                	<div class="login-title">
+                		<span>登录</span>
+                    </div>
+                	<form role="form" method="post" class="form-horizontal mt-30" id="login_form">
+                    	<div class="form-group">
+                            <label class="col-sm-3 control-label">用户名</label>
+                            <div class="col-sm-9 pr">
+                            	<input type="text" maxlength="32" name="username" class="form-control" id="username" placeholder="请输入账号/邮箱/手机号" value="">
+                                <div class="login_prompt">
+                                    <span id="user_prompt"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-30">
+                            <label class="col-sm-3 control-label">密<span class="ml-1em"></span>码</label>
+                            <div class="col-sm-9 pr">
+                            	<input type="password" maxlength="32" name="passwd" class="form-control" id="passwd" placeholder="请输入密码" value="">
+                                <div class="login_prompt">
+                                    <span id="pw_prompt"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-30 hidden" id="captcha_bar">
+                            <label class="col-sm-3 control-label">验证码</label>
+                            <div class="col-sm-5 pr">
+                            	<input type="text" maxlength="4" name="captcha" class="form-control" id="captcha" placeholder="请输入验证码" value="">
+                                <div class="login_prompt">
+                                    <span id="captcha_prompt"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 pl-0">
+                                <img src="../common/captcha" id="captcha_img" width="100" height="33">
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-30">
+                            <div class="col-sm-12">
+                        	    <input type="submit" id="sub" class="btn btn-primary btn-lg btn-block" value="登录">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group mt-20">
+                        	<div class="col-sm-12">
+                            	<div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="color-fff">自动登录</span>
+                                    </label>
+                                </div>
+                            </div>
+						</div>
+                        
+                        <div class="register-links clearfix mt-20">
+                        	<div class="pull-left">
+                        		<a href="forget_pw">忘记密码</a>
+                            </div>
+                            <div class="pull-right">
+                            	<a href="signup">立即注册</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../lib/jquery/jquery.md5.js"></script>
+    <script type="text/javascript" src="../javascripts/member/login.js"></script>
+<% include ../common/footer.html %>

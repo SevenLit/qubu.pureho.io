@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<title>趣步糖果相关问题</title>
+<!-- <meta name="keywords" content="<%= keywords %>">
+<meta name="description" content="<%= description %>"> -->
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge, Chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="/favicon.ico"/>
+
+<link rel="stylesheet" type="text/css" href="../../../public/lib/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="../../../public/stylesheets/css/common.css"/>
+<link rel="stylesheet" href="../../../public/stylesheets/css/reset.css"/>
+<link rel="stylesheet" href="../../../public/stylesheets/css/index.css"/>
+<link rel="stylesheet" href="../../../public/stylesheets/css/guide_list.css"/>
+
+<script type="text/javascript" src="../../../public/lib/jquery/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../../../public/javascripts/common/common.js"></script>
+<script type="text/javascript" src="../../../public/lib/bootstrap/bootstrap.min.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?527a12dff03e35c3657fad7f616ee651";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <div class="pull-left mt-10">
+                        <a href="/">
+                            <img src="../../../public/images/logo/pp_logo_06.png" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="pull-right">
+                        <p class="mt-15">微信：Seven-lit</p>
+                        <a href="//shang.qq.com/wpa/qunwpa?idkey=eb4a02c9ec37e845f7decaf252a3356854a18e3b850732adcad4c7530b0f850d" target="_blank" class="mt-5 center-block"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="趣步" title="趣步"></a>
+                        <!--<div class="clearfix">
+                            <ul class="header-nav" id="header-nav">
+                                <li class="<%= current_url == '/common/faq' ? 'active' : ''; %>">
+                                    <a href="/common/faq">常见问题</a>
+                                </li>
+                                <% if (typeof nick_name === 'undefined') { %>
+                                    <li class="<%= current_url == '/member/login' ? 'active' : ''; %>">
+                                        <a href="/member/login">登陆 <%= nick_name %></a>
+                                    </li>
+
+                                    <li class="pl-0">
+                                        <span class="color-fff mlr-5">|</span>
+                                    </li>
+
+                                    <li class="pl-0 <%= current_url == '/member/signup' ? 'active' : ''; %>">
+                                        <a href="/member/signup">注册</a>
+                                    </li>
+                                <% }else{ %>
+                                    <li>
+                                        <span class="color-fff">您好！<%= nick_name %>，<a href="/member/logout">退出登录</a></span>
+                                    </li>
+                                <% } %>
+
+                            </ul>
+                        </div>
+                        <div class="search-bar">
+                            <form id="form">
+                                <input type="text" class="all-search br-none" id="all_search" placeholder="请输入搜索内容" value="">
+                                <input type="submit" class="search-sub pull-right" id="search_sub" value="">
+                            </form>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-default navbar-static-top clearfix" style="margin-bottom: 0;">
+       <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+                  <span class="sr-only">切换导航</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a href="/" class="navbar-brand">首页</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                 <ul class="nav navbar-nav text-center">
+                     <li class="">
+                         <a href="../../index.html">首页</a>
+                     </li>
+                     <li class="">
+                         <a href="./guide_list.html">新手指南</a>
+                     </li>
+                     <li class="hide">
+                         <a href="<%= current_url == '/video' ? 'javascript:' : '/video'; %>">视频讲解</a>
+                     </li>
+                     <li class="">
+                         <a href="./download.html">下载客户端</a>
+                     </li>
+                     <li class="">
+                         <a href="/">联系我们</a>
+                     </li>
+                     <!--<li class="<%= current_url == '/center/index' ? 'active' : ''; %>">
+                         <a href="/center/index">个人中心</a>
+                     </li>-->
+                 </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="carousel-inner">
+        <div class="row">
+        	<div class="col-md-12">
+        		<div class="guide-cont-div">
+        			<img src="../../../public/images/article/qubu/banner_01.jpg" alt="趣步"/>
+        		</div>
+        	</div>	
+        </div>
+    </div>
+    <div class="carousel">
+        <div class="row">
+        	<div class="col-md-12">
+        		<ul class="pdlr-15">
+        			<li class="guide-cont-li">
+        				<h4>1、什么是趣步糖果？它是怎么产出的？</h4>
+        				<p>趣步糖果是趣步链（IWC）的产物，它的产出过程是用户走路或跑步等运动的计步过程。</p>
+        			</li>
+        			<li class="guide-cont-li">
+        				<h4>2、趣步糖果有什么价值？</h4>
+        				<p>用户通过运动产出的糖果可以进行平台任务兑换、商城商品兑换、合作商家商品及优惠券兑换、打赏、悬赏等相关活动。</p>
+        			</li>
+        			<li class="guide-cont-li">
+        				<h4>3、用户可以直接在趣步平台购买糖果吗？</h4>
+        				<p>不可以，平台不出售糖果，糖果产出的唯一方式是运动产出。糖果总量为10亿枚，永不增发。随着会员数的增加，糖果将进行阶段性减产，用户可以通过平台匹配到买卖信息，然后自行交换。</p>
+        			</li>
+        			<li class="guide-cont-li">
+        				<h4>4、每日获取的糖果数是怎么计算的呀？</h4>
+        				<p>每日糖果产出收益=0.00008*卷轴基本活跃度*卷轴任务步数+0.00008*加成活跃度*3000</p>
+        			</li>
+                    <li class="guide-cont-li">
+                        <h4>5、糖果是以“天”为计算单位产出，如果在任务进行到43天，后面2天忘记了，之前产生的糖果会扣除吗？用户在任务期间是否可以使用这部分糖果？</h4>
+                        <p>之前糖果不会扣除，每天都会产出糖果，只要有糖果就可以使用。</p>
+                    </li>
+                    <li class="guide-cont-li">
+                        <h4>6、用糖果在商城兑换商品是否需要手续费？</h4>
+                        <p>不需要。但会统一收取商品价格（糖果部分）的部分糖果作为快递费（依照用户等级所确定需要支出的百分比确定）。</p>
+                    </li>
+                    <li class="guide-cont-li">
+                        <h4>7、每日奖励的糖果数是在什么时候计入总糖果数?</h4>
+                        <p>每日奖励的糖果数会不定时更新进总糖果，您也可以手动点击“存入钱包”,点击之后糖果就会存入总糖果数。</p>
+                    </li>
+                    <li class="guide-cont-li">
+                        <h4>8、你们平台糖果交易的方式是什么样的？</h4>
+                        <p>平台提供买卖双方供需信息展示，自行匹配，自行交易。趣步公司不收取现金，只维护交易的公平公正。</p>
+                    </li>
+                    <li class="guide-cont-li">
+                        <h4>9、我有糖果后卖不出去，暂时没有人收怎么办？</h4>
+                        <p>1）可以在平台商城进行产品兑换；</p>
+                        <p>2）可以购买任务卷轴；</p>
+                        <p>3）可以先将糖果屯着，待有人收购且价格合适再卖出。</p>
+                    </li>
+                    <li class="guide-cont-li">
+                        <h4>10、你说平台糖果会涨价，为什么会涨价？</h4>
+                        <p>世间没有只涨不跌的商品。糖果的价格，随市场的行情涨跌。</p>
+                    </li>
+                    <li class="guide-cont-li">
+                        <h4>11、交易中遇到问题，钱给了，糖果没有收到怎么办？</h4>
+                        <p>用户申诉，把交易转账记录截图提交到平台，公司将会暂时冻结双方的账户进行调查，如情况属实，平台会将对方交易的糖果数直接转给买家，平台将会永久停止卖家账号，纳入趣步黑名单。</p>
+                    </li>
+                    <li class="guide-cont-li">
+                        <h4>12、你们的数据是实时更新的吗？</h4>
+                        <p>几乎是的。只有当日产出的糖果会不定时计入总糖果数，不是实时计入。</p>
+                    </li>
+        		</ul>
+        	</div>	
+        </div>
+    </div>
+
+    <div class="footer">
+       <!--  <p class="copyright">© 2016-2019 gpaopao.com 版权所有 ICP证：<a href="http://www.miibeian.gov.cn/" target="_blank">粤ICP备16085337号-1</a></p> -->
+    </div>
+
+    <script type="text/javascript">
+        !function(){
+            function PageScript() {
+                var self = this;
+
+                this.init = function(){
+                    self.bindEvent();
+                    return self;
+                };
+
+                this.bindEvent = function(){
+                    $("#backTop").click(function(){
+                        self.backTop();
+                    });
+
+                    $(document).scroll(function() {
+                        var scrollHeight = $(document).scrollTop();  //滚动高度
+                        var winHeight = $(window).height();  //可见高度
+
+                        if(scrollHeight >= winHeight){
+                            $("#backTop").show(300);
+                        }else{
+                            $("#backTop").hide(300);
+                        }
+                    });
+                };
+
+                //回到顶部
+                this.backTop = function () {
+                    $('html ,body').animate({scrollTop: 0}, 300);
+                };
+            }
+            window.pageScript = new PageScript().init();
+        }();
+    </script>
+</body>
+</html>

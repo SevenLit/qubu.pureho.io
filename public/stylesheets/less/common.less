@@ -1,0 +1,121 @@
+/* 通用属性 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+body{
+	font-size:14px;
+	color:#666666;
+}
+ul,ol{list-style-type:none;}
+a{
+	outline:none;
+}
+input,button,select,textarea{
+	outline:none;
+	-webkit-tap-highlight-color:transparent;
+}
+img,a img{
+	border:0;
+	margin:0;
+	padding:0;
+	outline:none;
+}
+/*头部*/
+.header{
+	padding-bottom:10px;
+}
+.header .header-nav{
+	margin-top:15px;
+	float:right;
+}
+.header .header-nav li{
+	float:left;
+	padding-left:15px;
+}
+.header .header-nav li a{
+	color:#fff;
+}
+.header .header-nav li a:hover,.header .header-nav li.active a{
+	color:#FF0;
+}
+.header .search-bar{
+	margin-top:15px;
+	background:#fff;
+}
+.header .search-bar .all-search{
+	width:190px;
+	height:35px;
+	line-height:35px;
+	padding-left:5px;
+	border:1px solid #ccc;
+}
+.header .search-bar .search-sub{
+	width:50px;
+	height:35px;
+	line-height:35px;
+	border:none;
+	border:1px solid #ccc;
+	background:url(../../images/search_icon.png) center center no-repeat;
+}
+.header .search-bar .search-sub:hover{
+	opacity:0.8;
+	-moz-opacity:0.8;
+	-webkit-opacity:0.8;
+	filter:alpha(opacity=80);
+}
+
+/*导航条*/
+.navbar .navbar-header .navbar-brand{
+    display:none;
+}
+
+/*回到顶部*/
+.fixed-menu-box {
+	position: fixed;
+	right: 30px;
+	bottom: 100px;
+}
+
+.fixed-menu-box .fixed-menu {
+	width: 30px;
+}
+
+.fixed-menu-box .fixed-menu .back-top {
+	width: 30px;
+	height: 30px;
+	background: #e5e5e5;
+	display: none;
+}
+
+.fixed-menu-box .fixed-menu .back-top-text {
+	font-size: 28px;
+	text-align: center;
+}
+
+/*尾部*/
+.footer{
+	background:#f7f7f7;
+}
+.footer .index-links-list{
+	padding:10px 0;
+}
+.footer .index-links-list a{
+	color:#666;
+	margin-top:10px;
+	display:inline-block
+}
+.footer .index-links-list a:hover{
+	color:#ff0;
+}
+.footer .copyright{
+	padding:10px 0;
+	text-align:center;
+	background:#f7f7f7;
+}
+
+.footer .copyright a{
+	color: #666;
+}
+
+@media (max-width:768px){
+    .navbar .navbar-header .navbar-brand{display:block;}
+    .form-bg .pp-bg-p{display:none;}
+}

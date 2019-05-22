@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<title>任务卷相关问题</title>
+<!-- <meta name="keywords" content="<%= keywords %>">
+<meta name="description" content="<%= description %>"> -->
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge, Chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="/favicon.ico"/>
+
+<link rel="stylesheet" type="text/css" href="../../../public/lib/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="../../../public/stylesheets/css/common.css"/>
+<link rel="stylesheet" href="../../../public/stylesheets/css/reset.css"/>
+<link rel="stylesheet" href="../../../public/stylesheets/css/index.css"/>
+<link rel="stylesheet" href="../../../public/stylesheets/css/guide_list.css"/>
+
+<script type="text/javascript" src="../../../public/lib/jquery/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../../../public/javascripts/common/common.js"></script>
+<script type="text/javascript" src="../../../public/lib/bootstrap/bootstrap.min.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?527a12dff03e35c3657fad7f616ee651";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <div class="pull-left mt-10">
+                        <a href="/">
+                            <img src="../../../public/images/logo/pp_logo_06.png" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="pull-right">
+                        <p class="mt-15">微信：Seven-lit</p>
+                        <a href="//shang.qq.com/wpa/qunwpa?idkey=eb4a02c9ec37e845f7decaf252a3356854a18e3b850732adcad4c7530b0f850d" target="_blank" class="mt-5 center-block"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="趣步" title="趣步"></a>
+                        <!--<div class="clearfix">
+                            <ul class="header-nav" id="header-nav">
+                                <li class="<%= current_url == '/common/faq' ? 'active' : ''; %>">
+                                    <a href="/common/faq">常见问题</a>
+                                </li>
+                                <% if (typeof nick_name === 'undefined') { %>
+                                    <li class="<%= current_url == '/member/login' ? 'active' : ''; %>">
+                                        <a href="/member/login">登陆 <%= nick_name %></a>
+                                    </li>
+
+                                    <li class="pl-0">
+                                        <span class="color-fff mlr-5">|</span>
+                                    </li>
+
+                                    <li class="pl-0 <%= current_url == '/member/signup' ? 'active' : ''; %>">
+                                        <a href="/member/signup">注册</a>
+                                    </li>
+                                <% }else{ %>
+                                    <li>
+                                        <span class="color-fff">您好！<%= nick_name %>，<a href="/member/logout">退出登录</a></span>
+                                    </li>
+                                <% } %>
+
+                            </ul>
+                        </div>
+                        <div class="search-bar">
+                            <form id="form">
+                                <input type="text" class="all-search br-none" id="all_search" placeholder="请输入搜索内容" value="">
+                                <input type="submit" class="search-sub pull-right" id="search_sub" value="">
+                            </form>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-default navbar-static-top clearfix" style="margin-bottom: 0;">
+       <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+                  <span class="sr-only">切换导航</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a href="/" class="navbar-brand">首页</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                 <ul class="nav navbar-nav text-center">
+                     <li class="">
+                         <a href="../../index.html">首页</a>
+                     </li>
+                     <li class="">
+                         <a href="./guide_list.html">新手指南</a>
+                     </li>
+                     <li class="hide">
+                         <a href="<%= current_url == '/video' ? 'javascript:' : '/video'; %>">视频讲解</a>
+                     </li>
+                     <li class="">
+                         <a href="./download.html">下载客户端</a>
+                     </li>
+                     <li class="">
+                         <a href="/">联系我们</a>
+                     </li>
+                     <!--<li class="<%= current_url == '/center/index' ? 'active' : ''; %>">
+                         <a href="/center/index">个人中心</a>
+                     </li>-->
+                 </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="carousel-inner">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="guide-cont-div">
+                    <img src="../../../public/images/article/qubu/banner_01.jpg" alt="趣步"/>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <div class="carousel">
+        <div class="row">
+        	<div class="col-md-12">
+        		<ul class="pdlr-15">
+        			<li class="guide-cont-li">
+        				<h4>1、平台设置的任务卷轴机制是怎样的 </h4>
+        				<p></p>
+        			</li>
+        			<li class="guide-cont-li">
+        				<h4>2、任务是需要按等级完成还是一开始就可以从高级任务开始做呢？</h4>
+        				<p>只要有足够的糖果，可以随时兑换任何任务。</p>
+        			</li>
+        			<li class="guide-cont-li">
+        				<h4>3、我可以一直只做免费的任务吗？</h4>
+        				<p>可以，每个会员初次注册，平台会赠送一个免费任务，任务结束后用所获得的糖果在任务列表兑换就可以了。</p>
+        			</li>
+        			<li class="guide-cont-li">
+        				<h4>4、我一定要完成试炼任务才可以进行下个任务吗？</h4>
+        				<p>不需要。每个会员最多可以同时做19个任务（1个专家任务，1个超级任务，1个精英任务，2个高级任务，2个进阶任务，4个中级任务。8个初级任务。）。</p>
+        			</li>
+        			<li class="guide-cont-li">
+        				<h4>5、我同时兑换多个任务，我每天完成的任务步数是需要叠加吗？</h4>
+        				<p>不需要。不同等级的任务都是同时进行的。</p>
+                        <p>例如：你同时拥有一个初级一个高级一个超级任务，你只需把最高级别任务步数完成了，初级任务自然也就完成了。</p>
+        			</li>
+                    <li class="guide-cont-li">
+                        <h4>6、如果我没有时间走路的话，可以补跑吗？</h4>
+                        <p>可以，任务时效为45天（手环任务卷轴时效为120天），只要在45天之内完成补跑即可（手环任务卷轴时效为120天）。补跑是补补跑日之前落下的步数，补跑日之后的步数不能提前完成。补跑仅计算基本活跃度所得糖果，加成活跃度部分不计入收益。所以，每天完成跑步任务才能收益最大化。</p>
+                    </li>
+                    <li class="guide-cont-li">
+                        <h4>7、我能不能通过其他方式获得其他的卷轴？</h4>
+                        <p>获取卷轴的方式有：用糖果兑换任务卷轴、推广做星级达人或成为城市合伙人奖励卷轴。趣步平台不出售任务及糖果。</p>
+                    </li>
+                    <li class="guide-cont-li">
+                        <h4>8、每个任务卷轴奖励的糖果数是大概数值，如果增加了活跃度，数值会增加吗？</h4>
+                        <p>会的，活跃度越高任务产出的糖果就会越多。</p>
+                    </li>
+                    <li class="guide-cont-li">
+                        <h4>9、我完成了任务步数后，我推广一个用户实名注册后会有5%的活跃度加成，这个5%当天还可以享受加成吗？</h4>
+                        <p>不可以，系统定时刷新活跃度，但加成活跃度的糖果需要次日开始计算。</p>
+                    </li>
+        		</ul>
+        	</div>	
+        </div>
+    </div>
+
+    <div class="footer">
+       <!--  <p class="copyright">© 2016-2019 gpaopao.com 版权所有 ICP证：<a href="http://www.miibeian.gov.cn/" target="_blank">粤ICP备16085337号-1</a></p> -->
+    </div>
+
+    <script type="text/javascript">
+        !function(){
+            function PageScript() {
+                var self = this;
+
+                this.init = function(){
+                    self.bindEvent();
+                    return self;
+                };
+
+                this.bindEvent = function(){
+                    $("#backTop").click(function(){
+                        self.backTop();
+                    });
+
+                    $(document).scroll(function() {
+                        var scrollHeight = $(document).scrollTop();  //滚动高度
+                        var winHeight = $(window).height();  //可见高度
+
+                        if(scrollHeight >= winHeight){
+                            $("#backTop").show(300);
+                        }else{
+                            $("#backTop").hide(300);
+                        }
+                    });
+                };
+
+                //回到顶部
+                this.backTop = function () {
+                    $('html ,body').animate({scrollTop: 0}, 300);
+                };
+            }
+            window.pageScript = new PageScript().init();
+        }();
+    </script>
+</body>
+</html>

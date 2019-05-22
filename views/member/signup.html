@@ -1,0 +1,207 @@
+<% include ../common/header.html %>
+<body class="bg-333">
+    <% include ../common/top.html %>
+    
+    <% include ../common/nav.html %>
+    
+    <div class="container oh">
+        <div class="row">
+        	<div class="col-md-10 col-md-offset-1">
+            	<div class="form-bg pr mb-20">
+                	<div class="pp-bg-p">
+                    	<div class="pp-bg"></div>
+                    </div>
+                    
+					<div class="form-title">
+                		<span>欢迎注册怪泡泡网站会员，如果你已注册，则可在这<a href="/member/login">登录</a></span>
+                    </div>
+                    
+                    <form role="form" method="post" class="form-horizontal" id="signup_form">
+                        <div class="form-group mt-20">
+                            <div class="row">
+                                <label class="col-sm-2 control-label input-title">
+                                    <span class="color-f00">*</span>
+                                    <span>用<span class="ml-05em"></span>户<span class="ml-05em"></span>名:</span>
+                                </label>
+                                <div class="col-sm-5">
+                                    <input type="text" maxlength="20" name="username" class="form-control" id="username" placeholder="请输入用户名" value="">
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="color-f00 pt-7">
+                                        <span class="prompt" id="name_prompt"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label input-title">
+                                    <span class="color-f00">*</span>
+                                    <span>密<span class="ml-2em"></span>码:</span>
+                                </label>
+                                <div class="col-sm-5">
+                                    <input type="password" maxlength="32" name="passwd" class="form-control" id="passwd" placeholder="请输入密码" value="">
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="color-f00 pt-7">
+                                        <span class="prompt" id="passwd_prompt"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label input-title">
+                                    <span class="color-f00">*</span>
+                                    <span>确认密码:</span>
+                                </label>
+                                <div class="col-sm-5">
+                                    <input type="password" maxlength="32" name="repeat_passwd" class="form-control" id="repeat_passwd" placeholder="请再次输入密码" value="">
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="color-f00 pt-7">
+                                        <span class="prompt" id="repeatpw_prompt"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label input-title">
+                                    <span class="color-f00"></span>
+                                    <span>昵<span class="ml-2em"></span>称:</span>
+                                </label>
+                                <div class="col-sm-5">
+                                    <input type="text" maxlength="20" name="nick_name" class="form-control" id="nick_name" placeholder="请输入昵称" value="">
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="color-f00 pt-7">
+                                        <span class="prompt" id="nickname_prompt"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label input-title">
+                                    <span class="color-f00"></span>
+                                    <span>性<span class="ml-2em"></span>别:</span>
+                                </label>
+                                <div class="radio">
+                                    <label class="col-sm-2 col-sm-offset-1">
+                                        <input type="radio" name="sex" id="sex1" value="0">男
+                                    </label>
+                                    <label class="col-sm-2">
+                                        <input type="radio" name="sex" id="sex2" value="1">女
+                                    </label>
+                                    <input type="hidden" id="sex_val" value="2">
+                                    <div class="col-sm-4">
+                                        <div class="color-f00 pt-7">
+                                            <span class="prompt" id="sex_prompt"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label input-title">
+                                    <span class="color-f00">*</span>
+                                    <span>手<span class="ml-2em"></span>机:</span>
+                                </label>
+                                <div class="col-sm-5">
+                                    <input type="text" maxlength="11" name="phone" class="form-control" id="phone" placeholder="请输入手机号码" value="">
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="color-f00 pt-7">
+                                        <span class="prompt" id="phone_prompt"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label input-title">
+                                    <span class="color-f00">*</span>
+                                    <span>验<span class="ml-05em"></span>证<span class="ml-05em"></span>码:</span>
+                                </label>
+                                <div class="col-sm-2">
+                                    <input type="text" maxlength="4" name="captcha" class="form-control" id="captcha" placeholder="请输入验证码" value="">
+                                </div>
+                                <div class="col-sm-3">
+                                   <img src="../common/captcha" id="captcha_img">
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="color-f00 pt-7">
+                                        <span class="prompt" id="captcha_prompt"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label input-title">
+                                    <span class="color-f00">*</span>
+                                    <span>邮<span class="ml-2em"></span>箱:</span>
+                                </label>
+                                <div class="col-sm-5">
+                                    <input type="text" maxlength="32" name="email" class="form-control" id="email" placeholder="请再次输入邮箱" value="">
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="color-f00 pt-7">
+                                        <span class="prompt" id="email_prompt"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 control-label input-title">
+                                    <span class="color-f00"></span>
+                                    <span>地<span class="ml-2em"></span>址:</span>
+                                </label>
+                                <div class="col-sm-5">
+                                    <textarea class="form-control" rows="5" maxlength="150" name="address" id="address" placeholder="请输入住址"></textarea>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="color-f00 pt-7">
+                                        <span class="prompt" id="address_prompt"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-4 col-sm-offset-2">
+                                <input type="submit" class="btn btn-primary btn-lg btn-block" id="sub" value="提交">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                        	<div class="col-sm-offset-2">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" checked="checked">
+                                        <span class="color-fff">同意遵守 <a href="javascript:;" class="agreement">《XXX服务条款》</a></span>
+                                    </label>
+                                </div>
+                            </div>
+                     	</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../lib/jquery/jquery.md5.js"></script>
+    <script type="text/javascript" src="../javascripts/member/signup.js"></script>
+<% include ../common/footer.html %>

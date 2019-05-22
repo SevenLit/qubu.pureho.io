@@ -1,0 +1,49 @@
+    <div class="fixed-menu-box">
+        <div class="fixed-menu">
+            <div class="back-top" id="backTop">
+                <div class="back-top-text">^</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p class="copyright">© 2016-2019 gpaopao.com 版权所有 ICP证：<a href="http://www.miibeian.gov.cn/" target="_blank">粤ICP备16085337号-1</a></p>
+    </div>
+
+    <script type="text/javascript">
+        !function(){
+            function PageScript() {
+                var self = this;
+
+                this.init = function(){
+                    self.bindEvent();
+                    return self;
+                };
+
+                this.bindEvent = function(){
+                    $("#backTop").click(function(){
+                        self.backTop();
+                    });
+
+                    $(document).scroll(function() {
+                        var scrollHeight = $(document).scrollTop();  //滚动高度
+                        var winHeight = $(window).height();  //可见高度
+
+                        if(scrollHeight >= winHeight){
+                            $("#backTop").show(300);
+                        }else{
+                            $("#backTop").hide(300);
+                        }
+                    });
+                };
+
+                //回到顶部
+                this.backTop = function () {
+                    $('html ,body').animate({scrollTop: 0}, 300);
+                };
+            }
+            window.pageScript = new PageScript().init();
+        }();
+    </script>
+</body>
+</html>

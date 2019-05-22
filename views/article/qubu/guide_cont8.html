@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<title>城市合伙人相关问题</title>
+<!-- <meta name="keywords" content="<%= keywords %>">
+<meta name="description" content="<%= description %>"> -->
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge, Chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="/favicon.ico"/>
+
+<link rel="stylesheet" type="text/css" href="../../../public/lib/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="../../../public/stylesheets/css/common.css"/>
+<link rel="stylesheet" href="../../../public/stylesheets/css/reset.css"/>
+<link rel="stylesheet" href="../../../public/stylesheets/css/index.css"/>
+<link rel="stylesheet" href="../../../public/stylesheets/css/guide_list.css"/>
+
+<script type="text/javascript" src="../../../public/lib/jquery/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../../../public/javascripts/common/common.js"></script>
+<script type="text/javascript" src="../../../public/lib/bootstrap/bootstrap.min.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?527a12dff03e35c3657fad7f616ee651";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 clearfix">
+                    <div class="pull-left mt-10">
+                        <a href="/">
+                            <img src="../../../public/images/logo/pp_logo_06.png" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="pull-right">
+                        <p class="mt-15">微信：Seven-lit</p>
+                        <a href="//shang.qq.com/wpa/qunwpa?idkey=eb4a02c9ec37e845f7decaf252a3356854a18e3b850732adcad4c7530b0f850d" target="_blank" class="mt-5 center-block"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="趣步" title="趣步"></a>
+                        <!--<div class="clearfix">
+                            <ul class="header-nav" id="header-nav">
+                                <li class="<%= current_url == '/common/faq' ? 'active' : ''; %>">
+                                    <a href="/common/faq">常见问题</a>
+                                </li>
+                                <% if (typeof nick_name === 'undefined') { %>
+                                    <li class="<%= current_url == '/member/login' ? 'active' : ''; %>">
+                                        <a href="/member/login">登陆 <%= nick_name %></a>
+                                    </li>
+
+                                    <li class="pl-0">
+                                        <span class="color-fff mlr-5">|</span>
+                                    </li>
+
+                                    <li class="pl-0 <%= current_url == '/member/signup' ? 'active' : ''; %>">
+                                        <a href="/member/signup">注册</a>
+                                    </li>
+                                <% }else{ %>
+                                    <li>
+                                        <span class="color-fff">您好！<%= nick_name %>，<a href="/member/logout">退出登录</a></span>
+                                    </li>
+                                <% } %>
+
+                            </ul>
+                        </div>
+                        <div class="search-bar">
+                            <form id="form">
+                                <input type="text" class="all-search br-none" id="all_search" placeholder="请输入搜索内容" value="">
+                                <input type="submit" class="search-sub pull-right" id="search_sub" value="">
+                            </form>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-default navbar-static-top clearfix" style="margin-bottom: 0;">
+       <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+                  <span class="sr-only">切换导航</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a href="/" class="navbar-brand">首页</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                 <ul class="nav navbar-nav text-center">
+                     <li class="">
+                         <a href="../../index.html">首页</a>
+                     </li>
+                     <li class="">
+                         <a href="./guide_list.html">新手指南</a>
+                     </li>
+                     <li class="hide">
+                         <a href="<%= current_url == '/video' ? 'javascript:' : '/video'; %>">视频讲解</a>
+                     </li>
+                     <li class="">
+                         <a href="./download.html">下载客户端</a>
+                     </li>
+                     <li class="">
+                         <a href="/">联系我们</a>
+                     </li>
+                     <!--<li class="<%= current_url == '/center/index' ? 'active' : ''; %>">
+                         <a href="/center/index">个人中心</a>
+                     </li>-->
+                 </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="carousel-inner">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="guide-cont-div">
+                    <img src="../../../public/images/article/qubu/banner_01.jpg" alt="趣步"/>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <div class="carousel">
+        <div class="row">
+        	<div class="col-md-12">
+        		<ul class="pdlr-15">
+
+                    <li class="guide-cont-li">
+                        <h4>1、成为城市合伙人有什么要求？</h4>
+
+                        <p>不同阶段不同招募政策，具体请咨询对接客服。要求如下：</p>
+
+                        <p>1）认同公司理念、价值互联网及区块链技术；</p>
+
+                        <p>2）独立法人并有一定经济基础；</p>
+
+                        <p>3）有推广团队、推广渠道及资源；</p>
+
+                        <p>4）热爱运动，每天步行或跑步步数在6000步以上； </p>
+
+                        <p>5）微商团队领导人、健身俱乐部教练等拥有推广渠道及资源者优先。</p>
+                    </li>
+
+
+
+                    <li class="guide-cont-li">
+                        <h4>2、城市合伙人的可收益项目有哪些？</h4>
+
+                        <p>有8大可收益项目</p>
+
+                        <p>1）享受该城市会员1%的基本活跃度加成（以身份证归属地来区分会员所属城市）；</p>
+
+                        <p>2）赠送价值1000糖果的高级任务卷轴一个；</p>
+
+                        <p>3）享受全球糖果交易手续费10%分红；</p>
+
+                        <p>4）享受该城市会员所发布的玩家分享帖子所获打赏的10%；</p>
+
+                        <p>5）享受该城市商城购物手续费10%分成（糖果部分）；</p>
+
+                        <p>6）享受该城市商家入驻审核权利及城市独立广告位一个；</p>
+
+                        <p>7）享受该城市运动产品销售分润；</p>
+
+                        <p>8）享受该城市运动大数据分润。</p>
+                    </li>
+
+
+
+                    <li class="guide-cont-li">
+                        <h4>3、趣步城市合伙人是以地区为单位招募吗？是独家吗？</h4>
+
+                        <p>答：是的，每个地级区域，只招募一个城市合伙人。</p>
+                    </li>
+
+                    <li class="guide-cont-li">
+                        <h4>4、趣步城市合伙人合同是一年一签吗？</h4>
+
+                        <p>答：一年一签。</p>
+                    </li>
+
+
+                    <li class="guide-cont-li">
+                        <h4>5、成为合伙人后，第二个月我没有进行中的任务，还有收益吗？</h4>
+
+                        <p>答：有收益</p>
+
+                        <p>该城市：会员1%的基本活跃度加成、会员所发布的玩家分享帖子所获打赏的10%、商城购物手续费10%分成（糖果部分）、运动产品销售分润、运动大数据分润、商家入驻审核权利及城市独立广告位一个、全球糖果交易手续费10%分红这些都可享受。</p>
+                    </li>
+
+
+
+                    <li class="guide-cont-li">
+                         <h4>6、如果我成为趣步城市合伙人？我什么时候能得到最大收益 ？ </h4>
+
+                        <p>答：个人所获得的糖果收益跟各自推广能力有关，能力越强收益越大，没有推广就没有收益。公司不承诺任何收益预期。</p>
+                    </li>
+
+                      
+
+
+                    <li class="guide-cont-li">
+                         <h4>7、平台任务卷轴可以奖励给星级达人、城市合伙人，那么你们平台是不是会私底下赠送给内部人员？</h4>
+
+                        <p答：不会。平台不私募、不众筹、不能私发糖果，一切按程序自动执行。糖果的产出只有通过运动产生，任何人不能篡改任何节点（手机）的糖果数据，但通过交易产生的两个节点的糖果变化有效。</p>
+                    </li>
+
+
+
+                    <li class="guide-cont-li">
+                        <h4>8、如果成为你们城市合伙人，如何推广才能达到收益最大化？你们公司有成功的案例吗？</h4>
+
+                        <p>答：公司只提供一个免费的平台，不对任何会员做出利益诱导和承诺。但公司会有趣步APP使用指南及客服服务。运营案例及经验可与其他合伙人交流，共同进步。</p>
+                    </li>
+
+
+
+                    <li class="guide-cont-li">
+                        <h4>9、城市合伙人收益，是否能在后台可以看到数据？奖励是实时的吗？</h4>
+
+                        <p>答：糖果收益，包括城市合伙人在内的每个会员，在APP里面都能看到明细，实时奖励。</p>
+                    </li>
+
+
+                    <li class="guide-cont-li">
+                         <h4>10、成为你们公司城市合伙人之后，公司会对我们定期进行产品和营销培训吗？ </h4>
+
+                        <p>答：会的，不定期会有线上培训。培训内容为：趣步APP使用指南、公司及项目介绍、营销推广方式方法等。   </p>
+                    </li>
+                        
+
+                    <li class="guide-cont-li">
+                        <h4>11、公司接受上门考察吗？</h4>
+
+                        <p>答：接受，但请提前预约。公司提供办公园区食堂伙食接待标准，不报销差旅费。</p>
+                    </li>
+        		</ul>
+        	</div>	
+        </div>
+    </div>
+
+    <div class="footer">
+       <!--  <p class="copyright">© 2016-2019 gpaopao.com 版权所有 ICP证：<a href="http://www.miibeian.gov.cn/" target="_blank">粤ICP备16085337号-1</a></p> -->
+    </div>
+
+    <script type="text/javascript">
+        !function(){
+            function PageScript() {
+                var self = this;
+
+                this.init = function(){
+                    self.bindEvent();
+                    return self;
+                };
+
+                this.bindEvent = function(){
+                    $("#backTop").click(function(){
+                        self.backTop();
+                    });
+
+                    $(document).scroll(function() {
+                        var scrollHeight = $(document).scrollTop();  //滚动高度
+                        var winHeight = $(window).height();  //可见高度
+
+                        if(scrollHeight >= winHeight){
+                            $("#backTop").show(300);
+                        }else{
+                            $("#backTop").hide(300);
+                        }
+                    });
+                };
+
+                //回到顶部
+                this.backTop = function () {
+                    $('html ,body').animate({scrollTop: 0}, 300);
+                };
+            }
+            window.pageScript = new PageScript().init();
+        }();
+    </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<% include ../common/header.html %>
+<body class="bg-333">
+	<% include ../common/top.html %>
+    
+    <% include ../common/nav.html %>
+    
+    <div class="container">
+    	<div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="form-bg pr mb-20">
+                    <div class="form-title">
+                        <span>找回密码</span>
+                    </div>
+
+                    <!--step 1-->
+                    <form role="form" class="form-horizontal" id="confirmEmail_form">
+                        <div class="form-group mt-20">
+                            <div class="row">
+                                <label class="col-sm-2 control-label input-title">
+                                    <span class="color-f00">*</span>
+                                    <span>邮<span class="ml-2em"></span>箱:</span>
+                                </label>
+                                <div class="col-sm-5">
+                                    <input type="text" maxlength="32" class="form-control" id="email" placeholder="请输入邮箱" value="">
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="color-f00 pt-7">
+                                        <span class="prompt" id="email_prompt"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-20">
+                            <div class="row">
+                                <label class="col-sm-2 control-label input-title">
+                                    <span class="color-f00">*</span>
+                                    <span>验<span class="ml-05em"></span>证<span class="ml-05em"></span>码:</span>
+                                </label>
+                                <div class="col-sm-3">
+                                    <input type="text" maxlength="4" class="form-control" id="captcha" placeholder="请输入验证码" value="">
+                                </div>
+                                <div class="col-sm-2 pl-0">
+                                    <img src="../common/captcha" id="captcha_img">
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="color-f00 pt-7">
+                                        <span class="prompt" id="captcha_prompt"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-20">
+                            <div class="col-sm-3 col-sm-offset-4">
+                                <input type="submit" class="btn btn-primary btn-lg btn-block" id="confirmEmail_btn" value="下一步">
+                            </div>
+                        </div>
+                    </form>
+
+                    <!--step 2-->
+                    <form role="form" class="form-horizontal hidden" id="sendEmail_form">
+                        <div class="form-group mt-20">
+                            <div class="row">
+                                <label class="col-sm-2 control-label input-title">
+                                    <span class="color-f00">*</span>
+                                    <span>邮<span class="ml-2em"></span>箱:</span>
+                                </label>
+                                <div class="col-sm-5">
+                                    <input type="text" maxlength="32" class="form-control" id="d_email" disabled="disabled" value="">
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="color-f00 pt-7">
+                                        <span class="prompt" id="email_prompt_2"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-20">
+                            <div class="row">
+                                <label class="col-sm-2 control-label input-title">
+                                    <span class="color-f00">*</span>
+                                    <span>验<span class="ml-05em"></span>证<span class="ml-05em"></span>码:</span>
+                                </label>
+                                <div class="col-sm-3">
+                                    <input type="text" maxlength="6" class="form-control" id="email_captcha" placeholder="邮箱验证码" value="">
+                                </div>
+                                <div class="col-sm-2">
+                                    <button type="button" class="btn btn-default" id="sendEmail_btn">发送验证码</button>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="color-f00 pt-7">
+                                        <span class="prompt" id="email_captcha_prompt"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-20">
+                            <div class="col-sm-3 col-sm-offset-4">
+                                <input type="submit" class="btn btn-primary btn-lg btn-block" id="sendEmail_next" value="下一步">
+                            </div>
+                        </div>
+                    </form>
+                    
+                    <!--step 3-->
+                    <form role="form" class="form-horizontal hidden" id="updatePW_form">
+                        <div class="form-group mt-20">
+                            <div class="row">
+                                <label class="col-sm-2 control-label input-title">
+                                    <span class="color-f00">*</span>
+                                    <span>新<span class="ml-05em"></span>密<span class="ml-05em"></span>码:</span>
+                                </label>
+                                <div class="col-sm-5">
+                                    <input type="password" maxlength="32" class="form-control" id="new_pw" value="">
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="color-f00 pt-7">
+                                        <span class="prompt" id="pw_prompt"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-20">
+                            <div class="row">
+                                <label class="col-sm-2 control-label input-title">
+                                    <span class="color-f00">*</span>
+                                    <span>确认密码:</span>
+                                </label>
+                                <div class="col-sm-5">
+                                    <input type="password" maxlength="32" class="form-control" id="repeat_new_pw"  value="">
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="color-f00 pt-7">
+                                        <span class="prompt" id="repeat_pw_prompt"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-20">
+                            <div class="col-sm-3 col-sm-offset-4">
+                                <input type="submit" class="btn btn-primary btn-lg btn-block" id="sub" value="提交">
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../lib/jquery/jquery.md5.js"></script>
+    <script type="text/javascript" src="../javascripts/member/forget_pw.js"></script>
+<% include ../common/footer.html %>

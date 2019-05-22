@@ -1,0 +1,23 @@
+.pdlr-15{padding:30px 15px;}
+.guide-li{padding:13px 0px;}
+.guide-li a{ color:black; }
+.guide-li a:hover{text-decoration:none;}
+
+.guide-cont-div img{width:100%;}
+.guide-cont-li{padding-top:25px; padding-bottom:25px; border-bottom:2px solid #dfdfdf;}
+.guide-cont-li:first-child{padding-top:0px;}
+.guide-cont-li:last-child{ border-bottom:unset;}
+.guide-cont-li h4{padding-bottom:15px;}
+.guide-cont-li p{text-indent:2em;}
+
+
+/* 联系我们 */
+.about-us-box{margin:30px 0px;}
+.about-us-box h3{text-align:center;}
+.about-us-box p{margin-bottom:15px;}
+.cl-red{color:red; margin-top:15px; text-align:center;}
+
+
+/*下载页*/
+.downloadapp{margin:40px 0px;}
+.downloadapp p{margin-bottom: 15px;}
